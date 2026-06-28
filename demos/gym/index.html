@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>FitSpace Pro | Gym Website Template</title>
+  <meta name="description" content="A premium spatial UI gym website template for fitness studios, trainers, and gyms." />
+  <link rel="stylesheet" href="style.css" />
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js"></script>
+</head>
+<body>
+  <div class="cursor"></div>
+  <div class="cursor-dot"></div>
+  <div class="bg-grid"></div>
+  <div class="orb orb-1"></div>
+  <div class="orb orb-2"></div>
+  <div class="orb orb-3"></div>
+
+  <header class="topbar">
+    <a href="index.html" class="logo"><span data-config="brandName">FITSPACE</span> <span>PRO</span></a>
+    <a href="contact.html" class="top-cta">Join Now</a>
+  </header>
+
+  <nav class="dock">
+    <a href="#home">Home</a>
+    <a href="#about">About</a>
+    <a href="#programs">Programs</a>
+    <a href="#plans">Plans</a>
+    <a href="#trainer">Trainer</a>
+    <a href="contact.html">Contact</a>
+  </nav>
+
+  <section id="home" class="hero spatial-section">
+    <div class="hero-left glass card-3d">
+      <p class="tag">Premium Fitness Website Template</p>
+      <h1>Train Hard.<br>Stay Strong.<br><span>Transform Faster.</span></h1>
+      <p class="hero-text">
+        Welcome to <span data-config="gymName">FitSpace Pro</span> — a premium spatial UI gym website template built for gyms, trainers, fitness studios, and personal training brands.
+      </p>
+      <div class="hero-buttons">
+        <a href="#" data-phone-link class="btn primary magnetic">Call Now</a>
+        <a href="#" data-whatsapp-link class="btn secondary magnetic">WhatsApp</a>
+      </div>
+    </div>
+
+    <div class="hero-right">
+      <div class="hero-orbit">
+        <div class="orbit-card glass">
+          <h3>₹<span data-config="monthlyPrice">1200</span></h3>
+          <p>Monthly</p>
+        </div>
+        <div class="orbit-card glass">
+          <h3>₹<span data-config="offerPrice">3000</span></h3>
+          <p>3 + 1 Offer</p>
+        </div>
+        <div class="center-core"><span>GYM</span></div>
+      </div>
+    </div>
+  </section>
+
+  <section class="stats-section">
+    <div class="glass stat-card card-3d"><h2>5 AM</h2><p>Opening Time</p></div>
+    <div class="glass stat-card card-3d"><h2>₹<span data-config="monthlyPrice">1200</span></h2><p>Monthly Plan</p></div>
+    <div class="glass stat-card card-3d"><h2>4th</h2><p>Month Free</p></div>
+  </section>
+
+  <section id="about" class="section spatial-section">
+    <div class="section-head">
+      <p class="tag">About Us</p>
+      <h2>About <span data-config="gymName">FitSpace Pro</span></h2>
+      <p>A modern fitness website design focused on strength, consistency, premium branding, and easy client conversion.</p>
+    </div>
+    <div class="grid-3">
+      <div class="glass feature-card card-3d"><div class="icon">💪</div><h3>Strength</h3><p>Promote strength training, weight lifting, and disciplined gym routines.</p></div>
+      <div class="glass feature-card card-3d"><div class="icon">🔥</div><h3>Transformation</h3><p>Showcase muscle gain, fat loss, and fitness progress with a premium UI.</p></div>
+      <div class="glass feature-card card-3d"><div class="icon">🏆</div><h3>Guidance</h3><p>Highlight trainer support, coaching, and structured workout programs.</p></div>
+    </div>
+  </section>
+
+  <section id="programs" class="section spatial-section">
+    <div class="section-head">
+      <p class="tag">Training</p>
+      <h2>Workout <span>Programs</span></h2>
+    </div>
+    <div class="program-stack">
+      <div class="glass program-card card-3d"><h3>01 / Muscle Building</h3><p>Focused workouts for size, strength, and lean muscle growth.</p></div>
+      <div class="glass program-card card-3d"><h3>02 / Fat Loss</h3><p>Improve stamina, burn calories, and build daily discipline.</p></div>
+      <div class="glass program-card card-3d"><h3>03 / Strength Training</h3><p>Improve power, endurance, and overall athletic performance.</p></div>
+    </div>
+  </section>
+
+  <section id="plans" class="section spatial-section">
+    <div class="section-head"><p class="tag">Membership</p><h2>Premium <span>Plans</span></h2></div>
+    <div class="plans">
+      <div class="glass price-card card-3d">
+        <p class="plan-label">Monthly</p>
+        <h2>₹<span data-config="monthlyPrice">1200</span></h2>
+        <p>Best for regular gym members.</p>
+        <a href="#" data-whatsapp-link class="btn primary magnetic">Join Now</a>
+      </div>
+      <div class="glass price-card featured card-3d">
+        <p class="plan-label">Best Offer</p>
+        <h2>₹<span data-config="offerPrice">3000</span></h2>
+        <p data-config="offerText">Pay for 3 months and get 4th month free.</p>
+        <a href="#" data-whatsapp-link class="btn primary magnetic">Grab Offer</a>
+      </div>
+    </div>
+  </section>
+
+  <section id="trainer" class="section spatial-section">
+    <div class="section-head"><p class="tag">Coach</p><h2>Meet <span data-config="trainerName">Trainer Name</span></h2></div>
+    <div class="glass trainer-card card-3d">
+      <div class="trainer-avatar" data-trainer-initial>T</div>
+      <div>
+        <h3 data-config="trainerName">Trainer Name</h3>
+        <p>Professional gym trainer helping members with form correction, workout guidance, discipline, and fitness progress.</p>
+      </div>
+    </div>
+  </section>
+
+  <section class="section spatial-section">
+    <div class="section-head"><p class="tag">Opening Hours</p><h2>Gym <span>Timings</span></h2></div>
+    <div class="glass timings-card card-3d">
+      <div><h3>Weekdays</h3><p>Morning: <span data-config="weekdayMorning">5:00 AM – 10:00 AM</span></p><p>Evening: <span data-config="weekdayEvening">5:00 PM – 9:00 PM</span></p></div>
+      <div><h3>Sunday</h3><p>Morning: <span data-config="sundayMorning">5:00 AM – 9:00 AM</span></p><p>Evening: <span data-config="sundayEvening">Closed</span></p></div>
+    </div>
+  </section>
+
+  <section class="section spatial-section">
+    <div class="section-head"><p class="tag">Members</p><h2>What People <span>Feel</span></h2></div>
+    <div class="grid-3">
+      <div class="glass feature-card card-3d"><h3>Great Environment</h3><p>Perfect place to stay consistent and focused on fitness goals.</p></div>
+      <div class="glass feature-card card-3d"><h3>Good Guidance</h3><p>Helpful trainer support for workouts and form correction.</p></div>
+      <div class="glass feature-card card-3d"><h3>Best Value</h3><p>Affordable membership plans with a strong gym atmosphere.</p></div>
+    </div>
+  </section>
+
+  <section class="cta spatial-section">
+    <div class="glass cta-box card-3d">
+      <p class="tag">Start Today</p>
+      <h2>Your fitness journey starts here.</h2>
+      <p>Call, WhatsApp, or visit directly to join.</p>
+      <a href="contact.html" class="btn primary magnetic">Contact Us</a>
+    </div>
+  </section>
+
+  <footer>
+    <p>© 2026 <span data-config="gymName">FitSpace Pro</span>. All Rights Reserved.</p>
+    <p class="credit">Template by <span data-config="designer">Twinstinct</span></p>
+  </footer>
+
+  <script src="config.js"></script>
+  <script src="script.js"></script>
+</body>
+</html>

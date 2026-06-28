@@ -1,0 +1,41 @@
+:root{
+  --bg:#080604;
+  --panel:#12100d;
+  --panel-soft:rgba(255,255,255,.07);
+  --text:#fff7eb;
+  --muted:#b8aa96;
+  --gold:#d6a85c;
+  --brown:#5c351e;
+  --cream:#fff0d2;
+  --line:rgba(255,255,255,.12);
+  --shadow:0 24px 80px rgba(0,0,0,.45);
+}
+*{box-sizing:border-box;margin:0;padding:0}
+html{scroll-behavior:smooth}
+body{font-family:Inter,system-ui,sans-serif;background:radial-gradient(circle at top,#231408,var(--bg) 42%);color:var(--text);overflow-x:hidden}
+a{text-decoration:none;color:inherit}
+.cursor-glow{position:fixed;width:220px;height:220px;background:radial-gradient(circle,rgba(214,168,92,.2),transparent 70%);pointer-events:none;transform:translate(-50%,-50%);z-index:1}
+.scroll-progress{position:fixed;top:0;left:0;height:3px;background:var(--gold);width:0;z-index:1000}
+.navbar{position:fixed;top:18px;left:50%;transform:translateX(-50%);width:min(1120px,92%);display:flex;align-items:center;justify-content:space-between;padding:14px 18px;background:rgba(8,6,4,.68);border:1px solid var(--line);border-radius:999px;backdrop-filter:blur(18px);z-index:999;box-shadow:var(--shadow)}
+.logo,footer h3{font-family:'Cormorant Garamond',serif;font-size:1.7rem;font-weight:700}.logo span,footer span{color:var(--gold)}
+.nav-links{display:flex;gap:24px;color:var(--muted);font-size:.94rem}.nav-links a:hover{color:var(--gold)}
+.nav-cta,.btn{display:inline-flex;align-items:center;justify-content:center;border-radius:999px;padding:12px 20px;font-weight:700;transition:.3s ease;border:1px solid var(--line)}
+.nav-cta,.primary{background:linear-gradient(135deg,var(--gold),#f3d291);color:#1b1005}.secondary{background:rgba(255,255,255,.08);color:var(--cream)}
+.btn:hover,.nav-cta:hover{transform:translateY(-3px);box-shadow:0 14px 40px rgba(214,168,92,.22)}
+.menu-toggle{display:none;background:none;border:0;color:white;font-size:1.5rem}
+.hero{min-height:100vh;position:relative;display:grid;place-items:center;padding:140px 6% 80px;background:linear-gradient(rgba(0,0,0,.35),rgba(0,0,0,.75)),url('https://images.unsplash.com/photo-1414235077428-338989a2e8c0?auto=format&fit=crop&w=1600&q=80') center/cover}
+.hero-content{text-align:center;max-width:900px;z-index:2}.eyebrow{color:var(--gold);text-transform:uppercase;letter-spacing:.18em;font-weight:800;font-size:.78rem;margin-bottom:14px}
+h1,h2{font-family:'Cormorant Garamond',serif;line-height:.96}h1{font-size:clamp(3.1rem,8vw,7.8rem)}h2{font-size:clamp(2.2rem,5vw,4.8rem)}
+.hero-text{max-width:720px;margin:24px auto;color:var(--muted);font-size:1.08rem;line-height:1.8}.hero-actions{display:flex;gap:14px;justify-content:center;flex-wrap:wrap}
+.hero-card{position:absolute;right:6%;bottom:8%;padding:24px;background:rgba(255,255,255,.09);border:1px solid var(--line);border-radius:28px;backdrop-filter:blur(16px);box-shadow:var(--shadow)}.hero-card p,.hero-card span{color:var(--muted)}.hero-card h3{font-size:1.7rem;margin:6px 0;color:var(--gold)}
+.floating-item{position:absolute;opacity:.8;animation:float 5s ease-in-out infinite}.item-1{left:8%;top:25%}.item-2{right:18%;top:23%;animation-delay:1s}.item-3{left:20%;bottom:18%;animation-delay:2s}@keyframes float{50%{transform:translateY(-22px) rotate(8deg)}}
+.section{padding:100px 6%;max-width:1240px;margin:auto}.stats{display:grid;grid-template-columns:repeat(4,1fr);gap:18px;margin-top:-50px;position:relative;z-index:5}.stats div,.menu-card,.review-card,.contact-card,.booking-form,.offer{background:rgba(255,255,255,.065);border:1px solid var(--line);border-radius:28px;padding:28px;backdrop-filter:blur(16px);box-shadow:var(--shadow)}.stats h2{color:var(--gold)}.stats p{color:var(--muted)}
+.about,.reserve,.contact{display:grid;grid-template-columns:1fr 1fr;gap:50px;align-items:center}.about-img{min-height:580px;border-radius:38px;background:linear-gradient(rgba(0,0,0,.1),rgba(0,0,0,.4)),url('https://images.unsplash.com/photo-1555396273-367ea4eb4db5?auto=format&fit=crop&w=1200&q=80') center/cover;box-shadow:var(--shadow)}.about-content p,.section-head p,.reserve-content p{color:var(--muted);line-height:1.8;margin-top:16px}.feature-grid{display:grid;grid-template-columns:1fr 1fr;gap:16px;margin-top:28px}.feature-grid div{padding:18px;border:1px solid var(--line);border-radius:20px;background:rgba(255,255,255,.045)}.feature-grid span{display:block;color:var(--muted);font-size:.9rem;margin-top:6px}
+.section-head{text-align:center;max-width:680px;margin:0 auto 42px}.menu-grid,.review-grid{display:grid;grid-template-columns:repeat(4,1fr);gap:20px}.menu-card span{color:var(--gold);font-size:.82rem;text-transform:uppercase;letter-spacing:.12em}.menu-card h3{font-size:1.45rem;margin:16px 0}.menu-card p,.review-card p{color:var(--muted);line-height:1.7}.menu-card strong{display:block;margin-top:18px;color:var(--gold);font-size:1.2rem}.menu-card:hover,.g-card:hover,.review-card:hover{transform:translateY(-8px);border-color:rgba(214,168,92,.5)}
+.offer{display:flex;justify-content:space-between;align-items:center;gap:20px;background:linear-gradient(135deg,rgba(214,168,92,.22),rgba(255,255,255,.05))}.offer p{color:var(--muted);max-width:620px;line-height:1.7;margin-top:10px}
+.gallery-grid{display:grid;grid-template-columns:repeat(4,1fr);grid-auto-rows:220px;gap:18px}.g-card{border-radius:30px;padding:24px;display:flex;align-items:end;font-weight:800;background:linear-gradient(rgba(0,0,0,.15),rgba(0,0,0,.75)),url('https://images.unsplash.com/photo-1551218808-94e220e084d2?auto=format&fit=crop&w=900&q=80') center/cover;border:1px solid var(--line);transition:.3s}.g-card:nth-child(2){background-image:linear-gradient(rgba(0,0,0,.15),rgba(0,0,0,.75)),url('https://images.unsplash.com/photo-1517248135467-4c7edcad34c4?auto=format&fit=crop&w=900&q=80')}.g-card:nth-child(3){background-image:linear-gradient(rgba(0,0,0,.15),rgba(0,0,0,.75)),url('https://images.unsplash.com/photo-1565299624946-b28f40a0ae38?auto=format&fit=crop&w=900&q=80')}.g-card:nth-child(4){background-image:linear-gradient(rgba(0,0,0,.15),rgba(0,0,0,.75)),url('https://images.unsplash.com/photo-1544145945-f90425340c7e?auto=format&fit=crop&w=900&q=80')}.g-card:nth-child(5){background-image:linear-gradient(rgba(0,0,0,.15),rgba(0,0,0,.75)),url('https://images.unsplash.com/photo-1552566626-52f8b828add9?auto=format&fit=crop&w=1200&q=80')}.tall{grid-row:span 2}.wide{grid-column:span 2}
+.booking-form{display:grid;gap:14px}input,select{width:100%;padding:16px 18px;border-radius:16px;border:1px solid var(--line);background:rgba(255,255,255,.06);color:white;outline:none}input:focus,select:focus{border-color:var(--gold)}select option{background:#111;color:white}.map iframe{width:100%;min-height:420px;border:0;border-radius:30px;filter:grayscale(.55) invert(.9);box-shadow:var(--shadow)}.contact-actions{display:flex;gap:12px;flex-wrap:wrap;margin-top:22px}
+.whatsapp{position:fixed;right:24px;bottom:24px;background:#25D366;color:white;padding:14px 18px;border-radius:999px;z-index:900;font-weight:800}.top-btn{position:fixed;left:24px;bottom:24px;width:46px;height:46px;border-radius:50%;border:1px solid var(--line);background:rgba(255,255,255,.08);color:white;display:none;z-index:900}footer{text-align:center;padding:60px 6%;border-top:1px solid var(--line);color:var(--muted)}
+.reveal{opacity:0;transform:translateY(34px);transition:all .8s ease}.reveal.active{opacity:1;transform:translateY(0)}.delay{transition-delay:.2s}
+@media(max-width:900px){.nav-links,.nav-cta{display:none}.menu-toggle{display:block}.nav-links.open{display:flex;position:absolute;top:70px;left:0;right:0;flex-direction:column;background:rgba(8,6,4,.95);border:1px solid var(--line);border-radius:24px;padding:22px}.stats,.menu-grid,.review-grid{grid-template-columns:1fr 1fr}.about,.reserve,.contact{grid-template-columns:1fr}.hero-card{position:relative;right:auto;bottom:auto;margin-top:30px}.gallery-grid{grid-template-columns:1fr 1fr}.wide{grid-column:span 1}.tall{grid-row:span 1}}
+@media(max-width:560px){.stats,.menu-grid,.review-grid,.feature-grid,.gallery-grid{grid-template-columns:1fr}.section{padding:74px 5%}.hero{padding-top:120px}.cursor-glow{display:none}.offer{flex-direction:column;align-items:flex-start}.navbar{top:10px;width:94%;border-radius:24px}.whatsapp{right:14px;bottom:14px}.top-btn{left:14px;bottom:14px}}
